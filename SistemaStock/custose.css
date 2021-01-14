@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+	table.table td a:hover {
+		color: #2196F3;
+	}
+
+    table.table td a.agregar {
+        color: #02B10C;
+    }
+	table.table td a.edit {
+        color: #FFC107;
+    }
+    table.table td a.delete {
+        color: #F44336;
+    }
+
+    
+    table.table td i {
+        font-size: 26px;
+    }
+
+    .left_col {
+    background: #2A3F54
+}
