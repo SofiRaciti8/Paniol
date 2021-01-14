@@ -96,6 +96,8 @@ include('template.php');
     });
   </script>
 
+
+
           <script type="text/javascript">
   $(document).ready(function(){
     $('#codig').load('Prestamos.php');
@@ -104,7 +106,9 @@ include('template.php');
 
 <script type="text/javascript">
     $(document).ready(function(){
-      $('#idProfesor').select2();
+      $('#idProfesor').select2({
+    width: '100%'
+});
 
       $('#idProfesor').change(function(){
         $.ajax({
@@ -115,6 +119,8 @@ include('template.php');
         });
       });
     });
+
+
   </script>
 
           <script type="text/javascript">
