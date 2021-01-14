@@ -1,14 +1,14 @@
 <?php
 
-$profe=$_POST['idProfesor'];
-$alumno=$_POST['alumno'];
-$cantidad=$_POST['cantidadd'];
+//$profe=$_POST['idProfesor'];
+//$alumno=$_POST['alumno'];
+//$cantidad=$_POST['cantidadd'];
 
 
-include('php/conexionP.php');
-$conexionP=conexionP();
+//include('php/conexionP.php');
+//$conexionP=conexionP();
 
-$prestamo ="INSERT INTO registroprestamos (idPrestamo, idProfesor,Alumno,CantidadArt ) VALUES (NULL,'$profe','$alumno','$cantidad')";
+$prestamo ="INSERT INTO registroprestamos (idPrestamo, idProfesor,Alumno,CantidadArt ) VALUES (NULL,'$id','$alumno','$var')";
 
     $queryp = mysqli_query($conexionP,$prestamo);
 
@@ -19,8 +19,9 @@ $prestamo ="INSERT INTO registroprestamos (idPrestamo, idProfesor,Alumno,Cantida
     if(!$queryp){
 		die("fallo");
 
-	}else{
+	}//else{
+		//echo "anduvo";
 
-	header("Location: prestamos.php?id=$idr&cant=$cantidad");
+	//header("Location: prestamos.php?id=$idr&cant=$cantidad");
 	
-	}
+	//}

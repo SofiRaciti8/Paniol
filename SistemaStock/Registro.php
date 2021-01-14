@@ -39,7 +39,7 @@ include('template.php');
             <div class="box-header with-border">
               <h3 class="box-title">Registro de Prestamos</h3>
             </div>
-           <form action="guardarregistro.php" method="POST">
+           <form action="Prestamos.php" method="POST">
              <div class="box-body">
 
                 <div class="form-group">

@@ -3,8 +3,16 @@
   require_once "php/conexionP.php";
   $conexionP=conexionP();
 
-  $id=$_GET['id'];
-  $var=$_REQUEST['cant'];
+  //$id=$_GET['id'];
+  //$var=$_REQUEST['cant'];
+
+  $id=$_POST['idProfesor'];
+  $alumno=$_POST['alumno'];
+  $var=$_POST['cantidadd'];
+
+  require_once "guardarregistro.php";
+
+
   $P="P";
 
   $sql3="SELECT *
